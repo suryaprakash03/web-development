@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="ta">
+    <head><!--responsible for presentation-->
+        <title>displays the title in the title bar</title>
+    </head>
+    <body><!--responsible for structure-->
+       <h1>there are about six heading tags big to small.h1 refers to big size.h1 to h6</h1>
+       <p>(p)paragraph tag<b>(b)for bold</b><i>(i) for italics</i>(br) for line break.(hr) for horizontal line</p><br>
+        <span>it is used for making a horizontal line the br,hr tags are self closing because there is no content in it<span><hr>
+        <p>
+            (sup)<sup>2</sup>+b<sup>2</sup> for raising power up<br>
+            (sub)<sub>2</sub>o for writing downnumbers<br>
+            <strong>(strong) acts like bold</strong><em>(em) to give more importance</em><br>
+            <abbr title="doctor">(abbr)</abbr> abdul kalam is a <acronyms title="indian space research organisation">isro(acronyms)</acronyms> scientist.both the abbr,acronyms tag requires title attribute<br>
+            abdul kalam said <q>(q)dream high to reach goals.quotes tag is enclosed with ""</q><br><!--title is the name appears on screen when mouse point on it-->
+            <!--acronyms is a first letter of abbreviation-->
+            he also said that<blockquote cite="reference site where quote is taken">(blockquote)dream keep you to encourage more and more when you feel tired<br>interest is the first step for success.blockquotes gives indentation</blockquote><br>
+            <dfn>(dfn)html</dfn> means hyper text markup language<br><!-- quote gives "" blockquote does not give-->
+            <mark>(mark)for highlighting</mark>
+    
+            <del>(del)strike a word</del><ins>(ins)underline the newword</ins>
+            <u>(u)underline the text</u>
+            <s>(s)strikes the text</s>
+        </p>
+        <p>
+            colors in html <br>
+            rgb(255-rendu anchu rem),hex(hexadecimalvalue from 00 to ff),hsl(hue,saturation,lightness|hue - 0-red 120-green 240-blue|satutation shade of grey in %|lightness 0%=black,100%=white)
+            <br>
+            alpha last add gives transparency 
+            <h1 style="color:rgb(255,0,0)">hai</h1>
+            <h1 style="color:#00ff00">hello</h1><!--ff in hexadecimal has the highest value-->
+            <h1 style="color:hsl(0, 76%, 38%)">welcome</h1><!-- each color divided by 120 degree-->
+            <h4>you can choose whatever color you need with the help of vs code editor</h4>
+        </p>
+        <figure>
+            <a href="http://www.google.com" target="_parent">
+            <img src="./img.png" title="ben 10" alt="it is a comic" usemap="#mapp">
+            </a>
+            <!--map gives a specified area in the image as a link to move another page-->
+            <!-- <map name="mapp"><area shape="rect" coords="" href=""></map> -->
+            <!--alt is used when picture is not visible-->
+            <figcaption>
+                (figcaption)a small description about that picture
+            </figcaption>
+            <h3>(img)img can be wrapped inside anchor tag.attributes title=shows when hovering|alt=shows when the image is not loaded properly|src=path|you can use image as a link to other site by placing img inside anchor tag</h3>
+        </figure>
+        <p>
+            <a href="http://www.google.com" target="_blank">google</a>(a)anchor tag attributes href=link to some sites|target="_blank(newpage),_top(ontopparentframe)if we have a html page embedded inside another one it executes the top one1-2-3.3 frame click opens that page in frame 1,_self(onsamepage)this is the default one._parent(parentframe) opens the page on direct parent"
+            <iframe src="./secondframe.html"></iframe>
+            <hr>
+            <a href="mailto:18eumc158@skcet.ac.in">mail(a tag href="mailto:--")</a><!-- it opens the user email and set the to address also-->
+            <a href="#end">bookmark.by using (a) tag where href="#name".in element id="name" both needs to be same</a>
+        </p><!--it is also used in the largedocument to go the particular topic without scroll down by using id known as bookmark-->
+            <ul><!--unordered list have circle(default) square none disc applying font color affects both the bullet and name-->
+                unordered list
+                <li style="list-style-type:square;">stunt</li>
+                <li>esp</li>
+                <li>psp</li>
+            </ul>
+            <ol type="I" start="3"><!--ordered list have numbers1(default),alphabets(A),(a),roman(I),smallromani for starting with the user value you can use the start-->
+                ordered list
+                <li>148</li>
+                <li>158</li>
+                <li>attribute type start</li>
+            </ol>
+            <dl>
+                (dl)
+                <dt title="description term">(dt) html</dt>
+                <dd title="description definition">(dd) this is a base for web developing</dd>
+            </dl>
+        <hr>
+        <table border="3"><!--thead tbody-->
+            <caption>(caption)title for the table</caption>
+            <colgroup> <!--colgroup is used for styling the common column-->
+                <col style="background-color:orange;">
+                <col style="background-color:white;">
+                <col style="background-color:green;">
+            </colgroup>
+            <tbody>
+                <thead>
+                    <tr>
+                        <th>(th)name</th>
+                        <td>esp</td>
+                        <td>stunt</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        
+                        <th>roll no</th><!--by default its bold and centered-->
+                        <td colspan="2">158(colspan)</td>
+                        <!--it enlarges the column space horizontally-->
+                        
+                    </tr>
+                    <tr>
+                        
+                        <td rowspan="2">education(rowspan)</td>
+                        <td>mech</td>
+                        <td>mech</td>
+                    </tr>
+                    <tr>
+                        <td>topper</td>
+                        <td>topper</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>footer</td>
+                        <td>footer</td>
+                        <td>footer</td>
+                    </tr>
+                </tfoot>
+                <tfoot>footer for table</tfoot>
+            </tbody>
+        </table><hr>
+        <h3>form elements</h3>
+        <span>all the values are stored in the form of name value pair when send to the server</span>
+        <form method="POST" oninput="opt.value=parseInt(range.value)+(num.value)"><!--used to get the value from user-->
+            <p><!--post method hides the user input data in the url sent to the server-->
+                name:(text)
+                <input type="text" name="name" placeholder="enter your name" size="20" max="10"><br><!--size sets the field box size only and max control the length-->
+                date of birth:(date)
+                <input type="date" name="dob" required><br><!-- required specifies necessay one -->
+                email id:(email)
+                <input type="email" name="email"><br>
+                website:(url)
+                <input type="url" name="url"><br>
+                time:(time)
+                <input type="time" name="time"><br>
+                search:(search)
+                <input type="search" name="search"><br>
+                range:(range)
+                <input type="range" name="range" min="1" max="10"><br><!--steps is incrementing the range search has cross icon easy to erase-->
+                number:(number)
+                <input type="number" name="num" value="1">
+                <output name="opt" for="range num"></output><br>
+                password:(password)
+                <input type="password" name="pwd"><br>
+                comment:(textarea)
+                <textarea></textarea>                          <!--it must be hidden-->
+                <meter value="0.5">(meter) to show percentages also known as gauge to display disk space 50%</meter><br>
+                <progress value="10" max ="100"></progress><br>
+                <h2>radio and checkboxes</h2>
+                <p>
+                     gender(radio) for easy access=>label for="key" input=>id="key"
+                     <input type="radio" name="gender" value="male" id="k7"><label for="k7">male</label><!-- for key id and input id be same to easy access the radio button and fiels by clicking on the field name-->
+                     <input type="radio" name="gender" value="female"id="k9"><label for="k9">female</label>
+                    </p>
+                    <p>
+                        hobbies(checkbox)
+                        <input type="checkbox" name="fun[]" value="playing">playing
+                        <input type="checkbox" name="fun[]" value="skateing">skateing
+                        <input type="checkbox" name="fun[]" value="gameing">gameing<!--name is in the array form to store multiple values-->
+                        <input type="checkbox" name="fun[]" value="gardening">gardening<!--multiple attribute is used to select more than one attribute-->
+                </p>
+                <h2>to give them a list of items under scroll bar for selecting more than one options</h2>
+                <select name="knownlanguage">
+                    <optgroup label="divide">
+                    <option value="c">c</option>
+                    <option value="html"selected>html</option>
+                    <option value="python">python</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="send">
+            </p>
+        </form>
+    <h2>getting videos from youtube server</h2>
+        <iframe
+             width="560"
+             height="315"
+             src="https://www.youtube.com/embed/hyVwwFMZ-jM"
+            frameborder="0" 
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen>
+        </iframe>
+    <fieldset>
+        <legend>form</legend><!--legends are name of the field set-->
+        <input type="text" name="surya" value="surya"><!--name and id are different name send to the server and id is a refernce to the label and named anchors-->
+    </fieldset>
+    <audio src="https://www.masstamilan.io/1797/maara-theme-mp3-song" controls >
+        if is not working
+    </audio>
+    <h1 id="end">this is the end of this webpage for bookmark</h1>
+    <marquee bgcolor="blue" direction="right" scrollamount="10" style="color:white">running animation</marquee>
+    <div>
+        h1 to h6,p,div,b,i,br,hr,sup,sub,strong,em,cite,abbr,acronyms,q,blockquote,dfn,mark,del,s,ins,u<br>
+        figure,img,figcaption,a,ul,ol,li,dl,dt,dd,table,caption,colgroup,col,th,tr,td,thead,tbody,tfoot<br>
+        form,input,select,option,optgroup,fieldset,legend,iframe,label<br>
+        html,head,title,style,link,script,meta,base,body,header,nav,main,aside,section,article,address<br>
+        span,pre,small,code,samp,kbd,details,summary,dialog,meter,progress,button,audio,video<br>
+        svg,canvas
+    </div>
+    <div>
+        80 - 115 tags total
+    </div>
+</body>
+<!--comments
+<header>
+    <section>   <aside>
+<footer>
+-->
+</html>

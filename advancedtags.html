@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>htmltags</title>
+    <script>
+        function progress()
+        {
+            let e = document.querySelector("progress");
+            e.value = e.value + 10;
+            console.log(e.value);
+        }
+
+    </script>
+</head>
+<body>
+    <header>heading</header>
+    <nav>navigation</nav>
+    <main>
+        <aside>sidecontent</aside>
+        <section><address>14/79 east street,ingur,perundurai
+                        erode ph-638052
+        </address>
+        <div>
+            <h3>inline elements</h3>
+            <cite>(cite)surya prakash</cite> created this page |
+            <code>(code)#include&ltconio.h&gt displays in monospace font|</code>
+            <small>(small)kavitha display in small size|</small>
+            <span><kbd>(kbd)keyboard input : Ctrl+c</kbd>for copying|span is a container tag for inline element like div</span>
+            <samp>(samp)palanisamy displays in monospace font|</samp><br>
+            <p>verylong<wbr>words<wbr></p>
+        </div>
+    </section>
+        <details>
+            <summary>(summary)psp</summary>
+            <dialog open><p>(dialog)p surya prakash</p></dialog>
+        </details>
+        <meter value="0.5">(meter) to show percentages also known as gauge to display disk space 50%</meter>
+        <progress value="10" max ="100"></progress>
+        <button onclick="progress()">progress</button>
+        <article>article</article>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

@@ -1,0 +1,34 @@
+**comments on html
+<!-- comments -->
+<!doctype html> -->indicates the browser that the file is displayed to the html standards without this declaration it cannot displayed well
+<html lang="en"> not for translation
+  <head>
+    <title>surya</title>
+  </head>
+  <body>
+      contents like heading,paragraphs
+  </body>
+</html>
+**A html file contains only a single body tag.
+**Attributes gives additional information about the html element
+**href for anchortag,src for img,alt if the image not displayed,width,height,style gives color,size,title when you hover gives additional information.
+**<a href="www.google.com">google</a> it must be inside the opening tag.
+**<del>strikes a text</del>  <ins>underline a text</ins>   <mark>highlight a text</mark>
+**<blockquote> gives you indentation <q> gives you double quote surrounded
+**favicon is a icon on the title bar left simply a logo having extension .icon you can use it in the head section
+**<link rel="stylesheet" href="#link"> tag is used to link current file to external source for (css),<script src="#link"></script>for linking to external javascript file
+**to travel to the specified element you can use the id with a name and anchor tag(prefixed with # the same name).
+
+parent element finish agama child element start agakudathu for eg:<p>This is <span>surya</p> prakash</span>
+html - hypertext-->a text with a link to the other page|markup-->content format wrap pandrathu|language
+github nama site publish panalam
+block level element || inline element
+nama write pandra code validate pandrathuku w3 validator eruku. 
+*start on  new line  | ocuppy the content size no new line is needed
+*can nested with     | can have only inline nested
+ inline and block 
+it is important to give width and height of an img tag that allocates the space faster or else it can make some loading improper
+in code sometimes the <,>,& these characters are not treated as content.in order to treat as contents some special character reference are used &lt-> <
+                                                                                                                                                &gt-> >
+                                                                                                                                                &amp-> &
+                                                                                                                                               &copy->copyright symbol
